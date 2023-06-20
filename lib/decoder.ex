@@ -26,7 +26,9 @@ defmodule Decoder do
 
   def get_rate_plan_lists(list) do
     Enum.map(list, fn hotel ->
-      get_rate_plan_list(hotel)
+      sortlist = get_rate_plan_list(hotel)
+      [h | _t] = Enum.sort_by(sortlist, & &1["TotalPrice"], :asc)
+      h
     end)
   end
 
@@ -35,14 +37,7 @@ defmodule Decoder do
     ratelist
   end
 
-  # def get_total_prices(list) do
-  #   Enum.map(list, fn hotel ->
-  #     get_total_price(hotel)
-  #   end)
-  # end
-
-  # def get_total_price(hotel_details) do
-  #   %{"TotalPrice" => price} = hotel_details
-  #   price
-  # end
+  def get_least_price(hotel_details, list) do
+    [get_hotel_id(hotel_details), get_rate_plan_lists(list)]
+  end
 end

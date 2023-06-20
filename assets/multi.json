@@ -28,6 +28,17 @@
               "StandardOccupancy": 2,
               "TotalPrice": 52.69
             
+            },
+            {
+
+              "BedType": 3,
+              "BreakfastType": 2,
+              "Currency": "USD",
+              "InventoryCount": 88,
+              "RoomTypeID": 8527419,
+              "StandardOccupancy": 2,
+              "TotalPrice": 32.69
+            
             }
           ]
         }
