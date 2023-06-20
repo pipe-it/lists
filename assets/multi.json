@@ -1,0 +1,37 @@
+ {
+  "Success": {
+    "PriceDetails": {
+      "CheckInDate": "2023-10-02 00:00:00",
+      "CheckOutDate": "2023-10-03 00:00:00",
+      "HotelList": [
+        {
+          
+          "HotelID": 1339,
+          "HotelName": "The Cottage Suvarnabhumi",
+          "RatePlanList": [
+            {
+              "BedType": 9,
+              "BreakfastType": 1,
+              "Currency": "USD",
+              "InventoryCount": 63,
+              "RoomTypeID": 1426959,
+              "StandardOccupancy": 2,
+              "TotalPrice": 22.69
+            },
+            {
+
+              "BedType": 7,
+              "BreakfastType": 2,
+              "Currency": "USD",
+              "InventoryCount": 23,
+              "RoomTypeID": 9517535,
+              "StandardOccupancy": 2,
+              "TotalPrice": 52.69
+            
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
