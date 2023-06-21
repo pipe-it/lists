@@ -28,16 +28,12 @@ defmodule Decoder do
     Enum.map(list, fn hotel ->
       sortlist = get_rate_plan_list(hotel)
       [h | _t] = Enum.sort_by(sortlist, & &1["TotalPrice"], :asc)
-      h
+      Map.put(h, "HotelID", get_hotel_id(hotel))
     end)
   end
 
   def get_rate_plan_list(hotel_details) do
     %{"RatePlanList" => ratelist} = hotel_details
     ratelist
-  end
-
-  def get_least_price(hotel_details, list) do
-    [get_hotel_id(hotel_details), get_rate_plan_lists(list)]
   end
 end

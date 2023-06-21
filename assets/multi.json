@@ -7,7 +7,7 @@
         {
           
           "HotelID": 1339,
-          "HotelName": "The Cottage Suvarnabhumi",
+          "HotelName": "The Cottage Gold",
           "RatePlanList": [
             {
               "BedType": 9,
@@ -38,6 +38,44 @@
               "RoomTypeID": 8527419,
               "StandardOccupancy": 2,
               "TotalPrice": 32.69
+            
+            }
+          ]
+        },
+        {
+          
+          "HotelID": 7485,
+          "HotelName": "The Cottage Silver",
+          "RatePlanList": [
+            {
+              "BedType": 4,
+              "BreakfastType": 1,
+              "Currency": "USD",
+              "InventoryCount": 3,
+              "RoomTypeID": 5286493,
+              "StandardOccupancy": 2,
+              "TotalPrice": 42.87
+            },
+            {
+
+              "BedType": 1,
+              "BreakfastType": 2,
+              "Currency": "USD",
+              "InventoryCount": 4,
+              "RoomTypeID": 7852469,
+              "StandardOccupancy": 2,
+              "TotalPrice": 178.22
+            
+            },
+            {
+
+              "BedType": 5,
+              "BreakfastType": 2,
+              "Currency": "USD",
+              "InventoryCount": 8,
+              "RoomTypeID": 3571596,
+              "StandardOccupancy": 2,
+              "TotalPrice": 44.79
             
             }
           ]
