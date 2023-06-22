@@ -1,0 +1,807 @@
+<s:Envelope
+	xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+	<s:Header>
+		<o:Security s:mustUnderstand="1"
+			xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<u:Timestamp u:Id="_0">
+				<u:Created>2023-06-16T10:53:26.148Z</u:Created>
+				<u:Expires>2023-06-16T10:58:26.148Z</u:Expires>
+			</u:Timestamp>
+		</o:Security>
+	</s:Header>
+	<s:Body>
+		<AvailResponse
+			xmlns="http://schemas.xmltravelgate.com/hub/2012/06">
+			<AvailResult
+				xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+				<hubStatus>
+					<code>1</code>
+					<warnings i:nil="true"/>
+					<exceptionString i:nil="true"/>
+					<roleInstanceId>az_we_Front.Core.App_prod</roleInstanceId>
+					<messageWebRoleStats>
+						<startAtUtc>0001-01-01T00:00:00</startAtUtc>
+						<endAtUtc>0001-01-01T00:00:00</endAtUtc>
+						<execution>PT0S</execution>
+						<messageExpiresAtUtc>0001-01-01T00:00:00</messageExpiresAtUtc>
+						<getValidationConfiguration>PT0S</getValidationConfiguration>
+						<buildHubMessageRQ>PT0S</buildHubMessageRQ>
+					</messageWebRoleStats>
+				</hubStatus>
+				<providerRSs>
+					<ProviderRS>
+						<hubProviderStatus>
+							<code>1</code>
+							<exceptionString i:nil="true"/>
+							<hubProviderError i:nil="true"/>
+							<invocationWorkerRoleStats>
+								<startAtUtc>0001-01-01T00:00:00</startAtUtc>
+								<receiveBrokeredMessageRQ>0001-01-01T00:00:00</receiveBrokeredMessageRQ>
+								<buildAssembly>PT0S</buildAssembly>
+								<buildInvokeRQ>PT0S</buildInvokeRQ>
+								<invoke>PT0S</invoke>
+								<invokeProvider>PT0S</invokeProvider>
+								<buildInvokeRS>PT0S</buildInvokeRS>
+								<buildBrokeredMessageRS>PT0S</buildBrokeredMessageRS>
+								<serializeRS>PT0S</serializeRS>
+								<compressRS>PT0S</compressRS>
+								<compressAuditRS>PT0S</compressAuditRS>
+								<processPCI>PT0S</processPCI>
+							</invocationWorkerRoleStats>
+							<roleInstanceId>az_we_sith_prod/sith-0003-we</roleInstanceId>
+						</hubProviderStatus>
+						<refId>1</refId>
+						<rs>
+							<?xml version="1.0" encoding="utf-8"?>
+							<AvailRS
+								xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+								xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+								<auditData>
+									<timeStamp>0001-01-01T00:00:00</timeStamp>
+									<processTimeMilliseconds>0</processTimeMilliseconds>
+								</auditData>
+								<operationImplemented>true</operationImplemented>
+								<Hotels>
+									<Hotel code="935326" name="Millennium Place Dubai Marina">
+										<MealPlans>
+											<MealPlan code="HB">
+												<Options>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589747" roomCandidateRefId="1" code="81589747_21" description="Executive Suite with Balcony">
+																<Price currency="USD" amount="472.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="472.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">472.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589735" roomCandidateRefId="1" code="81589735_21" description="Double room - De Luxe - Balcony">
+																<Price currency="USD" amount="321.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="321.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>72</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">321.0</Penalty>
+																<Deadline>2023-11-13T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589747" roomCandidateRefId="1" code="81589747_20" description="Executive Suite with Balcony">
+																<Price currency="USD" amount="352.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="352.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589746" roomCandidateRefId="1" code="81589746_20" description="Executive Suite">
+																<Price currency="USD" amount="566.28" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="566.28" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589746" roomCandidateRefId="1" code="81589746_21" description="Executive Suite">
+																<Price currency="USD" amount="572.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="572.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>72</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">572.0</Penalty>
+																<Deadline>2023-11-13T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589735" roomCandidateRefId="1" code="81589735_20" description="Double room - De Luxe - Balcony">
+																<Price currency="USD" amount="317.79" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="317.79" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589748" roomCandidateRefId="1" code="81589748_20" description="Executive Place with Balcony">
+																<Price currency="USD" amount="401.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="401.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589745" roomCandidateRefId="1" code="81589745_21" description="Deluxe Twin Balcony">
+																<Price currency="USD" amount="278.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="278.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">278.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589745" roomCandidateRefId="1" code="81589745_20" description="Deluxe Twin Balcony">
+																<Price currency="USD" amount="266.88" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="266.88" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589748" roomCandidateRefId="1" code="81589748_21" description="Executive Place with Balcony">
+																<Price currency="USD" amount="413.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="413.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">413.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589738" roomCandidateRefId="1" code="81589738_21" description="Executive Room">
+																<Price currency="USD" amount="423.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="423.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>72</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">423.0</Penalty>
+																<Deadline>2023-11-13T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589738" roomCandidateRefId="1" code="81589738_20" description="Executive Room">
+																<Price currency="USD" amount="418.77" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="418.77" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589739" roomCandidateRefId="1" code="81589739_20" description="Deluxe Room with Balcony">
+																<Price currency="USD" amount="302.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="302.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589739" roomCandidateRefId="1" code="81589739_21" description="Deluxe Room with Balcony">
+																<Price currency="USD" amount="314.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="314.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">314.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589742" roomCandidateRefId="1" code="81589742_20" description="Superior Twin Room">
+																<Price currency="USD" amount="270.72" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="270.72" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589742" roomCandidateRefId="1" code="81589742_21" description="Superior Twin Room">
+																<Price currency="USD" amount="282.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="282.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">282.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589740" roomCandidateRefId="1" code="81589740_20" description="Superior Room">
+																<Price currency="USD" amount="287.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="287.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589740" roomCandidateRefId="1" code="81589740_21" description="Superior Room">
+																<Price currency="USD" amount="292.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="292.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">292.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+												</Options>
+											</MealPlan>
+											<MealPlan code="NB">
+												<Options>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589735" roomCandidateRefId="1" code="81589735_10" description="Double room - De Luxe - Balcony">
+																<Price currency="USD" amount="285.12" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="285.12" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589739" roomCandidateRefId="1" code="81589739_11" description="Deluxe Room with Balcony">
+																<Price currency="USD" amount="278.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="278.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">278.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589739" roomCandidateRefId="1" code="81589739_10" description="Deluxe Room with Balcony">
+																<Price currency="USD" amount="266.88" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="266.88" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589740" roomCandidateRefId="1" code="81589740_11" description="Superior Room">
+																<Price currency="USD" amount="246.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="246.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">246.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589740" roomCandidateRefId="1" code="81589740_10" description="Superior Room">
+																<Price currency="USD" amount="236.16" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="236.16" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589742" roomCandidateRefId="1" code="81589742_11" description="Superior Twin Room">
+																<Price currency="USD" amount="246.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="246.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">246.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589742" roomCandidateRefId="1" code="81589742_10" description="Superior Twin Room">
+																<Price currency="USD" amount="236.16" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="236.16" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589735" roomCandidateRefId="1" code="81589735_11" description="Double room - De Luxe - Balcony">
+																<Price currency="USD" amount="288.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="288.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>72</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">288.0</Penalty>
+																<Deadline>2023-11-13T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589747" roomCandidateRefId="1" code="81589747_10" description="Executive Suite with Balcony">
+																<Price currency="USD" amount="340.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="340.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589747" roomCandidateRefId="1" code="81589747_11" description="Executive Suite with Balcony">
+																<Price currency="USD" amount="434.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="434.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">434.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589746" roomCandidateRefId="1" code="81589746_11" description="Executive Suite">
+																<Price currency="USD" amount="539.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="539.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>72</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">539.0</Penalty>
+																<Deadline>2023-11-13T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589746" roomCandidateRefId="1" code="81589746_10" description="Executive Suite">
+																<Price currency="USD" amount="533.61" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="533.61" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589745" roomCandidateRefId="1" code="81589745_10" description="Deluxe Twin Balcony">
+																<Price currency="USD" amount="265.49" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="265.49" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589745" roomCandidateRefId="1" code="81589745_11" description="Deluxe Twin Balcony">
+																<Price currency="USD" amount="273.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="273.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">273.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589748" roomCandidateRefId="1" code="81589748_11" description="Executive Place with Balcony">
+																<Price currency="USD" amount="381.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="381.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>24</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">381.0</Penalty>
+																<Deadline>2023-11-15T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589748" roomCandidateRefId="1" code="81589748_10" description="Executive Place with Balcony">
+																<Price currency="USD" amount="369.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="369.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589738" roomCandidateRefId="1" code="81589738_10" description="Executive Room">
+																<Price currency="USD" amount="386.1" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="386.1" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<Remarks />
+														<Offers />
+													</Option>
+													<Option type="Hotel" paymentType="MerchantPay" status="OK">
+														<Rooms>
+															<Room id="81589738" roomCandidateRefId="1" code="81589738_11" description="Executive Room">
+																<Price currency="USD" amount="390.0" binding="false" commission="0" minimumSellingPrice="-1" />
+																<DailyPrices />
+																<DailyRatePlans />
+																<Offers />
+															</Room>
+														</Rooms>
+														<Price currency="USD" amount="390.0" binding="false" commission="0" minimumSellingPrice="-1" />
+														<Parameters>
+															<Parameter key="sessionid" value="9c9c762bc5bc66e4f8f4621aaed0359d" />
+														</Parameters>
+														<CancelPenalties nonRefundable="false">
+															<CancelPenalty>
+																<HoursBefore>72</HoursBefore>
+																<Penalty type="Importe" paymentType="MerchantPay" currency="USD">390.0</Penalty>
+																<Deadline>2023-11-13T10:00:00Z</Deadline>
+																<CalculatedDeadline>true</CalculatedDeadline>
+															</CancelPenalty>
+														</CancelPenalties>
+														<Remarks />
+														<Offers />
+													</Option>
+												</Options>
+											</MealPlan>
+										</MealPlans>
+									</Hotel>
+								</Hotels>
+							</AvailRS>
+						</rs>
+						<rsXML i:nil="true"/>
+					</ProviderRS>
+				</providerRSs>
+			</AvailResult>
+		</AvailResponse>
+	</s:Body>
+</s:Envelope>
