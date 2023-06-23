@@ -1,0 +1,27 @@
+{
+                         
+    "PriceList": 
+        [
+            {
+            "StayDate": "2023-07-26 00:00:00",
+            "Price": 72.31,
+            "MealAmount": 0,
+            "MealType": 7
+            },
+            {
+            "StayDate": "2023-07-26 00:00:00",
+            "Price": 172.31,
+            "MealAmount": 0,
+            "MealType": 3
+            },
+            {
+            "StayDate": "2023-07-26 00:00:00",
+            "Price": 12.31,
+            "MealAmount": 0,
+            "MealType": 5
+            }
+        ],
+    
+    "RoomTypeID": 9002601
+                            
+}

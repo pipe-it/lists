@@ -17,6 +17,7 @@ defmodule Decoder do
     Enum.map(list, fn hotel ->
       %{"RatePlanList" => ratelist} = hotel
       [h | _t] = Enum.sort_by(ratelist, & &1["TotalPrice"], :asc)
+
       %{"HotelID" => id} = hotel
       Map.put(h, "HotelID", id)
     end)
