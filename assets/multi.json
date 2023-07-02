@@ -1,9 +1,11 @@
  {
-  "Success": {
-    "PriceDetails": {
-      "CheckInDate": "2023-10-02 00:00:00",
-      "CheckOutDate": "2023-10-03 00:00:00",
-      "HotelList": [
+  "Success": 
+  {
+    "PriceDetails": 
+    {
+      
+      "HotelList": 
+      [
         {
           
           "HotelID": 1339,

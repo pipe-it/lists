@@ -1,0 +1,63 @@
+{
+	"aggregations": 
+	{
+		"2": 
+		{
+			"buckets": 
+			[
+				{
+					"key": "Wise Travel",
+					"doc_count": 9252878,
+					"4": 
+					{
+						"buckets": 
+						[
+							{
+								"key": "sa",
+								"doc_count": 9210852,
+								"5": 
+								{
+									
+									"buckets": 
+									[
+										{
+											"key": 1,
+											"key_as_string": "true",
+											"doc_count": 8691535
+										},
+										{
+											"key": 0,
+											"key_as_string": "false",
+											"doc_count": 519317
+										}
+									]
+								}
+							},
+							{
+								"key": "rf",
+								"doc_count": 36585,
+								"5": {
+									
+									"buckets": [
+										{
+											"key": 1,
+											"key_as_string": "true",
+											"doc_count": 36298
+										},
+										{
+											"key": 0,
+											"key_as_string": "false",
+											"doc_count": 287
+										}
+									]
+								}
+							}
+							
+						]
+					}
+				}
+				
+			]
+		}
+	}
+}
