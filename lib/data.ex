@@ -39,16 +39,6 @@ defmodule Data do
     |> Map.get("buckets")
   end
 
-  def get_ep_lists(list) do
-    Enum.map(list, fn key ->
-      get_ep_list(key)
-    end)
-  end
-
-  defp get_ep_list(travels_details) do
-    Map.get(travels_details, "key")
-  end
-
   def get_bucket3_lists(list) do
     List.first(list)
     |> Enum.map(fn five ->
@@ -59,6 +49,17 @@ defmodule Data do
   defp get_bucket3_list(travels_details) do
     Map.get(travels_details, "5")
     |> Map.get("buckets")
+  end
+
+  def get_ep_lists(list) do
+    List.first(list)
+    |> Enum.map(fn key ->
+      get_ep_list(key)
+    end)
+  end
+
+  defp get_ep_list(travels_details) do
+    Map.get(travels_details, "key")
   end
 
   def get_doc_count(list) do
