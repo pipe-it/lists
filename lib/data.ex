@@ -7,7 +7,7 @@ defmodule Data do
     file_data = File.read(path)
 
     case file_data do
-      {:error, _reason} -> {:error, _reason}
+      {:error, reason} -> {:error, reason}
       {:ok, binary} -> Jason.decode!(binary)
     end
   end
@@ -24,11 +24,44 @@ defmodule Data do
     end)
   end
 
-  def get_travels_key(travels_details) do
+  defp get_travels_key(travels_details) do
     Map.get(travels_details, "key")
   end
 
   def get_bucket2_lists(list) do
+    Enum.map(list, fn four ->
+      get_bucket2_list(four)
+    end)
+  end
+
+  defp get_bucket2_list(travels_details) do
+    Map.get(travels_details, "4")
+    |> Map.get("buckets")
+  end
+
+  def get_ep_lists(list) do
+    Enum.map(list, fn key ->
+      get_ep_list(key)
+    end)
+  end
+
+  defp get_ep_list(travels_details) do
+    Map.get(travels_details, "key")
+  end
+
+  def get_bucket3_lists(list) do
+    List.first(list)
+    |> Enum.map(fn five ->
+      get_bucket3_list(five)
+    end)
+  end
+
+  defp get_bucket3_list(travels_details) do
+    Map.get(travels_details, "5")
+    |> Map.get("buckets")
+  end
+
+  def get_doc_count(list) do
     Enum.map(list, fn four ->
       Map.get(four, "4")
       |> Map.get("buckets")
@@ -38,26 +71,9 @@ defmodule Data do
       Map.get(five, "5")
       |> Map.get("buckets")
     end)
-
-    # |>Enum.map(fn doc -> Map.get(, "5")
-    # |> Map.get("buckets")
-    # end)
+    # |> List.first()
+    |> Enum.map(fn doc ->
+      Map.get(doc, "doc_count")
+    end)
   end
-
-  # def get_bucket2_list(travels_details) do
-  #   Map.get(travels_details, "4")
-  #   |> Map.get("buckets")
-  # end
-
-  # def get_bucket3_lists(list) do
-  #   List.first(list)
-  #   |>Enum.map(fn five ->
-  #     get_bucket3_list(five)
-  #   end)
-  # end
-
-  # def get_bucket3_list(travels_details) do
-  #   Map.get(travels_details, "5")
-  #   |> Map.get("buckets")
-  # end
 end
