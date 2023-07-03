@@ -1,7 +1,3 @@
-# I need out put in this format - this can be a map
-# - Key "Wise Travel", ep: "sa", true: 8691535, false: 519317
-# - Key "Ostrovok Clients", ep: "rc", true: 1100, false: 97
-
 defmodule Data do
   def read(path) do
     file_data = File.read(path)
@@ -12,71 +8,43 @@ defmodule Data do
     end
   end
 
-  def get_bucket1_lists(data) do
-    Map.get(data, "aggregations")
-    |> Map.get("2")
-    |> Map.get("buckets")
-  end
-
-  def get_travels_keys(list) do
-    Enum.map(list, fn key ->
-      get_travels_key(key)
-    end)
-  end
-
-  defp get_travels_key(travels_details) do
-    Map.get(travels_details, "key")
-  end
-
-  def get_bucket2_lists(list) do
-    Enum.map(list, fn four ->
-      get_bucket2_list(four)
-    end)
-  end
-
-  defp get_bucket2_list(travels_details) do
-    Map.get(travels_details, "4")
-    |> Map.get("buckets")
-  end
-
-  def get_bucket3_lists(list) do
-    List.first(list)
-    |> Enum.map(fn five ->
-      get_bucket3_list(five)
-    end)
-  end
-
-  defp get_bucket3_list(travels_details) do
-    Map.get(travels_details, "5")
-    |> Map.get("buckets")
-  end
-
-  def get_ep_lists(list) do
-    List.first(list)
-    |> Enum.map(fn key ->
-      get_ep_list(key)
-    end)
-  end
-
-  defp get_ep_list(travels_details) do
-    Map.get(travels_details, "key")
-  end
-
-  def get_doc_count(list) do
-    Enum.map(list, fn four ->
-      Map.get(four, "4")
+  def get_doc_count(data) do
+    result =
+      Map.get(data, "aggregations")
+      |> Map.get("2")
       |> Map.get("buckets")
-    end)
-    |> List.first()
-    |> Enum.map(fn five ->
-      Map.get(five, "5")
-      |> Map.get("buckets")
-    end)
+      |> Enum.map(fn %{"key" => key, "4" => four} ->
+        four
+        |> Map.get("buckets")
+        |> Enum.map(fn %{"key" => ep, "5" => five} ->
+          case Map.get(five, "buckets") do
+            [
+              %{"key_as_string" => key1, "doc_count" => key1_count},
+              %{"key_as_string" => key2, "doc_count" => key2_count}
+            ] ->
+              %{
+                "ep" => ep,
+                key1 => key1_count,
+                key2 => key2_count,
+                "date" => "2023-06-28 00:00:00"
+              }
 
-    # |> Enum.map(fn [x,y] -> 
-    #   # Enum.map(fn doc ->
-    #   # Map.get(doc,"doc_count")
-    #   # end)
-    # end)
+            [
+              %{"key_as_string" => key = "true", "doc_count" => key_count}
+            ] ->
+              %{"ep" => ep, key => key_count, "false" => 0, "date" => "2023-06-28 00:00:00"}
+
+            [
+              %{"key_as_string" => key = "false", "doc_count" => key_count}
+            ] ->
+              %{"ep" => ep, key => key_count, "false" => 0, "date" => "2023-06-28 00:00:00"}
+          end
+        end)
+        |> Enum.map(&Map.put(&1, "key", key))
+      end)
+      |> List.flatten()
+      |> Jason.encode!()
+
+    # File.write!("assets/result.json", result)
   end
 end
