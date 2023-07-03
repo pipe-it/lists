@@ -72,5 +72,11 @@ defmodule Data do
       Map.get(five, "5")
       |> Map.get("buckets")
     end)
+
+    # |> Enum.map(fn [x,y] -> 
+    #   # Enum.map(fn doc ->
+    #   # Map.get(doc,"doc_count")
+    #   # end)
+    # end)
   end
 end
