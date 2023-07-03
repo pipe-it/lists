@@ -32,12 +32,18 @@ defmodule Data do
             [
               %{"key_as_string" => key = "true", "doc_count" => key_count}
             ] ->
-              %{"ep" => ep, key => key_count, "false" => 0, "date" => "2023-06-28 00:00:00"}
+              %{"ep" => ep, 
+              key => key_count, 
+              "false" => 0, 
+              "date" => "2023-06-28 00:00:00"}
 
             [
               %{"key_as_string" => key = "false", "doc_count" => key_count}
             ] ->
-              %{"ep" => ep, key => key_count, "false" => 0, "date" => "2023-06-28 00:00:00"}
+              %{"ep" => ep, 
+              key => key_count, 
+              "false" => 0, 
+              "date" => "2023-06-28 00:00:00"}
           end
         end)
         |> Enum.map(&Map.put(&1, "key", key))
