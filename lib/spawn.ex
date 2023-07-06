@@ -17,6 +17,6 @@ defmodule Spawn do
 
   def run() do
     writer_pid = spawn(Spawn, :writer, [])
-    reader_pid = spawn(Spawn, :reader, [writer_pid])
+    _reader_pid = spawn(Spawn, :reader, [writer_pid])
   end
 end

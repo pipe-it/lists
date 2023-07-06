@@ -3,7 +3,7 @@ defmodule Live do
     file_data = File.read(path)
 
     case file_data do
-      {:error, _reason} -> {:error, _reason}
+      {:error, reason} -> {:error, reason}
       {:ok, binary} -> Jason.decode!(binary)
     end
   end
