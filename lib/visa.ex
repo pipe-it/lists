@@ -5,7 +5,7 @@ defmodule Visa do
     GenServer.start_link(__MODULE__, auth)
   end
 
-  def init(auth) do
+  def init(_auth) do
     {:ok, %{files: [], rejected_files: [], granted_files: []}}
   end
 
@@ -26,7 +26,7 @@ defmodule Visa do
   def handle_cast({:grant, name}, state) do
     existing_files = state.granted_files
     granted_files = [name | existing_files]
-    new_state = Map.put(state, :rejected_files, rejected_files)
+    new_state = Map.put(state, :granted_files, granted_files)
     {:noreply, new_state}
   end
 end
